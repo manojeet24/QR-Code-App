@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>QR Decoder</title>
+    <link rel = "icon" href =  "../static/qr-logo.png" type = "image/x-icon"> 
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/decode.css">
+</head>
+<body>
+    <div class="heading" >
+        <!-- <div>
+            <img src="../static/AppLogo1.png" width="220" height="200">
+        </div> -->
+        <h1>QR Code Decoder</h1>
+    </div>
+    <br>
+    <div class="container">
+        <div id="drop-region">
+            <div class="drop-message" id="drop-qr">
+                Click Here<br> or <br> Drag & Drop
+            </div>
+            <div id="image-preview"></div>
+        </div>
+    </div>
+    <div id="result">
+        <output id="output"></output>
+        <a id="link" href=""></a>
+    </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../static/decode.js"></script>
+</body>
+</html>

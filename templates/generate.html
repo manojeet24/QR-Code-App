@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>QR Generator</title>
+    <link rel = "icon" href =  "../static/qr-logo.png" type = "image/x-icon"> 
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/generate.css">
+</head>
+<body>
+    <div class="top">
+        <h1>QR Code Generator</h1>
+        <br><br>
+        <input id="input-data" placeholder="Enter Data to be Encrypted">
+        <br>
+        <br>
+        <div class="button">
+            <button type="submit" onclick="generate()">Generate</button>
+        </div>
+        
+    </div>
+    <br>
+    <div id="output">
+        <!-- <img id = "output-image" width="200" height="200"> -->
+    </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src='../static/generate.js'></script>
+</body>
+</html>
