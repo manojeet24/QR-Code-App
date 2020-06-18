@@ -39,3 +39,6 @@ def decrypt():
 @app.route('/favicon.ico')
 def fault():
     return 'favIcon'
+
+if __name__ == "__main__":
+    app.run(debug=True)
