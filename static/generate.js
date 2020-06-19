@@ -36,9 +36,21 @@ function generate(){
                 var ele = document.getElementById('output-image');
                 if(ele)
                     ele.remove();
-                $("#output").append("<img id='output-image' src='../static/qr.png' width='200' height='200'>");
+                var random_string = makeid(5);
+                var source = "<img id='output-image' src='../static/qr.png?" + random_string + "width='200' height='200'>";
+                $("#output").append(source);
                 // document.getElementById('output-image').setAttribute('src','../static/qr.png')
             },750);
-        },
+        },  
     });
 }
+
+function makeid(length) {
+    var result           = '';
+    var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    var charactersLength = characters.length;
+    for ( var i = 0; i < length; i++ ) {
+       result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+    return result;
+ }
